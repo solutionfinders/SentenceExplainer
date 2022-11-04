@@ -10,22 +10,22 @@
 
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO
 <br />
 <div align="center">
   <a href="https://github.com/solutionfinders/SentenceExplainer">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+    <img src="images/logo.png" alt="Logo" width="80" height="80"> 
+  </a> -->
 
 <h3 align="center">A Sentence Similarity Explainer</h3>
 
   <p align="center">
     An explainable AI module to explain the results of sentence similarity with Sentence Transformers
     <br />
-    <a href="https://github.com/solutionfinders/SentenceExplainer"><strong>Explore the docs »</strong></a>
+    <!--<a href="https://github.com/solutionfinders/SentenceExplainer"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/solutionfinders/SentenceExplainer">View Demo</a>
+    <a href="https://github.com/solutionfinders/SentenceExplainer">View Demo</a> -->
     ·
     <a href="https://github.com/solutionfinders/SentenceExplainer/issues">Report Bug</a>
     ·
@@ -41,17 +41,14 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
+      <!-- <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+      </ul>-->
+    </li> 
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -66,9 +63,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://lavrio.solutions)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `solutionfinders`, `SentenceExplainer`, `@codingGarden`, `linkedin_username`, `email_client`, `email`, `A Sentence Similarity Explainer`, `project_description`
+An explainable AI module for sentence similarity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
