@@ -49,7 +49,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>-->
     </li> 
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#idea">Idea</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -76,13 +76,19 @@ An explainable AI module for sentence similarity.
 
 You need Sentence Transformers from huggingface, a model, and a corpus of texts/sentences. This package helps you to understand which words contribute to a Sentence Similarity score.
 
+Standard output: the result of your search/sentence similarity, and under each hit the original query/sentence with the words in colors corresponding to the importance of the word for this hit. 
 
-<!-- USAGE EXAMPLES 
-## Usage
+Red words are important for this hit (i.e. they reduce the score of this hit when removed from the query) while blue words are detrimental to this hit (when they are not part aóf the query, the score of this hit increases).
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- IDEA -->
+## Idea
+
+The idea is to first query the sentence similarity scores for a sentence in regard to a corpus of texts. The resulting list of hits is then analyzed by this script in the following way:
+
+Take the first word out of the sentence. The resulting shortened query sentence is again embedded by the model, and used as a query. This time, we only look at the list of results from our first query, and calculate the differences in scores.
+
+These differences are attributed to this first word. Subsequently, we are taking other words out of the query and compare the change in scores, until we finished it with the whole sentence.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,10 +125,10 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE
+LICENSE
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +137,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Jens Beyer - [@codingGarden](https://twitter.com/codingGarden) - jens@lavrio.solutions - [lavrio.solutions](https://lavrio.solutions)
+Jens Beyer - [@codingGarden@mstdn.social](https://mstdn.social/@codingGarden) - jens@lavrio.solutions - [lavrio.solutions](https://lavrio.solutions)
 
 Project Link: [https://github.com/solutionfinders/SentenceExplainer](https://github.com/solutionfinders/SentenceExplainer)
 
